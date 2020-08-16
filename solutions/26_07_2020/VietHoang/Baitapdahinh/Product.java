@@ -61,13 +61,15 @@ public class Product {
     public void addNew() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap thong tin san pham:");
-        do
+        do {
         try {
                    System.out.println("Nhap ma san pham :");
                    setId(sc.nextInt());
                    break;
         } catch (Exception e) {
             System.out.println("Nhap vao so");
+        }
+        sc.nextLine();
         } while (true);
         
         System.out.println("Nhap ten san pham:");
@@ -81,6 +83,7 @@ public class Product {
         } catch (Exception e) {
             System.out.println("Nhap vao dinh dang la so nguyen:");
         }
+        sc.nextLine();
         } while (true);
         do {
         try {
@@ -90,6 +93,7 @@ public class Product {
         } catch (Exception e) {
             System.out.println("Nhap vao dinh dang la so");
         }
+        sc.nextLine();
         } while (true);
     }
     public void outputInfo() {

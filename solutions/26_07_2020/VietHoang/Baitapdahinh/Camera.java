@@ -43,6 +43,7 @@ public class Camera extends Product{
         } catch (Exception e) {
             System.out.println("Nhap vao gia tri true/false");
         }
+        sc.nextLine();
         } while (true);
         
     }
